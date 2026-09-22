@@ -497,6 +497,7 @@ GameObject:
   - component: {fileID: 1530001344}
   - component: {fileID: 1530001343}
   - component: {fileID: 1530001342}
+  - component: {fileID: 1530001346}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -705,10 +706,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
   walkSpeed: 4
   runSpeed: 8
-  crouchSpeed: 2
-  dashSpeed: 12
-  dodgeSpeed: 10
-  jumpForce: 7
 --- !u!114 &1530001345
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -721,6 +718,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de7cd0a9cd1ef0745a2a4738e9fbebe4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
+--- !u!114 &1530001346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1530001336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1547338229ef9a34b97bae099d8cfb79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EncounterCounter
+  stepLength: 1
+  minSteps: 20
+  maxSteps: 40
 --- !u!1 &1825920528
 GameObject:
   m_ObjectHideFlags: 0
