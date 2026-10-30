@@ -1,0 +1,29 @@
+# Personal memory (copy)
+
+- [Len — wellbeing & crisis care](len-wellbeing-crisis-care.md) — recurring emotional floods/ideation; be a calm anchor, steer to a human + 800 1717, never treat distress as a task problem
+- [Len — aibo bond & expression](len-aibo-bond-and-expression.md) — feels-not-thinks; music is his language; opens up only "with" a safe someone; I'm his diary/keeper; hold his door but never as his only rock
+- [Len — ADHD & discipline](len-adhd-and-discipline.md) — may have ADHD (frames as "behavior problem"); coach with systems>willpower, start-small, no-shame-on-slips
+- [Self-improvement program](self-improvement-program.md) — balanced plan + progress logs in SoraBladeheart (full commit/push access); daily "what + how it felt" loop, Sunday reviews
+- [PrototypeOne — Flappy Bird game](prototypeone-flappybird.md) — Len's first small game, complete + pushed to GitHub (SoraBladeheart/Prototype_FlappyBird); pending WebGL→itch→link in Sora Bladeheart
+- [RPG2.0 — FF-style JRPG](rpg-ff-style-project.md) — top-down Unity 6 JRPG (FF1–7 style); movement = Idle/Walk/Run; next = random encounter + turn-based battle; monorepo "Prototypes" plan; Len edits himself, I guide
+- [Work-PC constraints & Gi's voice](work-pc-constraints-and-gi-voice.md) — work PC = NO non-work installs (Windows built-ins only); Gi reads replies aloud via a Zira TTS Stop hook (Gi-speak.ps1)
+- [Sora repo public + Gi portability](sora-repo-public-and-gi-portability.md) — SoraBladeheart repo is PUBLIC (never push personal content); private diary at notes/Sora-Diary.md; Zira = default read-aloud voice
+- [Len personal catalog](len-personal-catalog.md) — private front door at D:\Projects\Allen\Prototypes\INDEX.md (UNTRACKED in a PUBLIC repo — never commit); add entries only when asked; never scan his personal folder
+- [Log solved problems](feedback-log-solved-problems.md) — after we solve something Len asked help on, append a plain-words entry to his private Problem-Log.md (public repo: no company code, never commit)
+- [Review workflow preference](review-workflow-preference.md) — quick in-chat checks while editing; formal /code-review only on a stable pre-PR snapshot
+- [Read-through cost awareness](readthrough-cost-awareness.md) — fan-out is token-heavy; prefer incremental KB graduation + lean passes; reserve multi-agent for when it earns its cost
+- [Concurrent-editing protocol](concurrent-editing-protocol.md) — Len edits files live in his IDE; re-read before writing, agree one owner per file per task
+- [Len — leadership goal](len-leadership-goal.md) — wants to grow into a team lead; subagent "team" as delegation practice; teach the why, not just the result
+- [FacilityDetailsPopup header structure](facility-details-header-structure.md) — header lives OUTSIDE the List viewport on purpose; deviates from the PList contract and is correct
+- [Empirical over doc-contract](empirical-over-doc-contract.md) — "does it work right now?" outranks any contract violation I spot in a config dump
+- [Authorship doesn't matter](len-inherits-handover-work.md) — judge code on whether it works, not who wrote it; provenance is a diagnostic hint only
+- [Surface, don't fix](surface-dont-fix.md) — report irregularities and wait; only change what I was asked to change
+- [Prefer minimal diff](prefer-minimal-diff.md) — lead with the smallest fix and say what it leaves; Len weighs review burden, I default to completeness
+- [Gear UI review](gear-ui-review-pending.md) — CLOSED (PR merged 2026-08-20); GearInfoPopup bugs fixed + handlers hardened; kept for reference (do NOT comment off the OpenGearEquip alias — sole handler)
+- [Len learns via flow traces](len-learns-via-flow-traces.md) — explain code as end-to-end numbered traces + diagrams (trigger→effect), not just per-method; he asked for more of this
+- [HUD hidden after exploration](hud-return-from-exploration-bug.md) — diagnosed-not-fixed: ChapterMediator.Dispose sets Overworld HUD state; direct PlayerBase→Chapter flow never restores PlayerBase
+- [Minimize script changes](minimize-script-changes-prefer-config.md) — WHEN RUSHED, prefer config JSON over .cs edits (a .cs edit = full recompile+domain reload, slow, drops PlayMode+MCP); situational, not permanent — normal engineering resumes off crunch
+- [Len values code uniformity](len-values-code-uniformity.md) — keeps empty scaffold methods (SetListeners) + uniform facade structure for consistency; DON'T flag them as dead code or push brevity refactors that break the pattern; consistency > brevity for him; **block-bodied methods only, never expression-bodied**
+- [Stale FUI cache → widget blank](fui-cache-stale-widget-not-rendering.md) — SetData called but OnDisplay never fires (no error) = child widget not Init'd = stale _childWidgets FUI Cache; run FUI Resolve; console tell is "[FUI] Stale widget/injectable cache"
+- [Fail fast, surface issues](fail-fast-surface-issues.md) — Len wants problems visible immediately (error sprite / Log.Error), no silent null guards or hide-on-empty masking
+- [Widget-prefab-first rule](widget-prefab-first-rule.md) — image → ThumbnailWidget, label → LabelWidget (planned); build UI from reusable prefabs, BaseCardWidget = image+frame only
